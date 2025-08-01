@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 
 # Load model and data
 model = joblib.load("model.joblib")  # Trained RandomForestClassifier
-data = pd.read_csv("data.csv")
+data = pd.read_csv("student_dataset_with_ids.csv")
 
 # Ensure StudentID is string
 data['StudentID'] = data['StudentID'].astype(str)
